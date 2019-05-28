@@ -8,28 +8,56 @@ h3 {
   margin: 0;
 }
 
-input {
+#table1 input {
   text-align:right;
   width: 60px;
 }
 
-#table1 {
-  width: 400px;
-  padding: 10px;
+#table2 input {
+  background-color: #e7f7f7;
+  border: 0;
+}
+
+#section1 {
+  width: 350px;
+  padding: 12px;
   border: 1px solid#c8dada;
   border-radius: 3px;
   float: left;
 }
 
-#table2 {
-  width: 400px;
-  padding: 10px;
+#section2 {
+  width: 300px;
+  padding: 12px;
   border: 1px solid#c8dada;
   border-radius: 3px;
   float: right;
 }
 
-div, td {
-  padding: 12px;
+div {
+  padding: 20px 10px 10px 10px;
 }
 
+#column1 {
+  padding: 12px 12px 12px 20px;
+}
+
+#column2 {
+  padding: 12px 5px 12px;
+}
+
+#section1 > div > table {
+  padding: 10px;
+}
+
+#section2 > div > table {
+  padding: 10px;
+}
+
+#table1 td {
+  padding: 12px 80px 12px 12px;
+}
+
+#table2 td {
+  padding: 5px 70px 5px 5px;
+}

@@ -2,32 +2,20 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <!-- <meta name="keywords" content="bobby, chan, male" > -->
     <title>Histogram Generator</title>
     <link rel="stylesheet" href="./stylesheets/histogram.css">
     <script src="calculate.js"></script>
   </head>
   <body>
     <!-- page content -->
-
-    <!-- <script>
-      var a = window.prompt("What is your name");
-      window.alert(a);
-    </script> -->
     <header><h2>Histogram Generator</h2></header>
     <main>
       <table><tr>
-        <td>
-      <!-- <section id="about">
-        <h2>ABOUT</h2>
-      	 My name is Bobby Chan&#x00021; My phone number is <a href="tel:7787824488"> HERE </a> <br />
-         My picture: <img src="./image.jpg" alt="pic"/>
-      </section> -->
-      <section id="table1" style="background-color:#e7f7f7" >
+      <td id="column1">
+      <section id="section1" style="background-color:#e7f7f7" >
         <h3>Lower bounds</h3> 
         <div>
-          <table>
-            <!-- <tr><th>Course</th><th>Semesters</th></tr> -->
+          <table id="table1">
             <tr><td>Max</td><td><input type="text" name="max" value="100.00"></td></tr>
             <tr><td>A+</td><td><input type="text" name="a+" value="95.00"></td></tr>
             <tr><td>A</td><td><input type="text" name="a" value="90.00"></td></tr>
@@ -44,31 +32,26 @@
         </div>
       </section>
       </td>
-      <td>
-      <section id="table2" style="background-color:#e7f7f7" style="position:fixed">
+      <td id="column2" style="vertical-align:top">
+      <section id="section2" style="background-color:#e7f7f7">
           <h3>Histogram</h3> 
           <div>
-            <table>
-              <!-- <tr><th>Course</th><th>Semesters</th></tr> -->
-              <tr><td>A+</td></tr>
-              <tr><td>A</td></tr>
-              <tr><td>A-</td></tr>
-              <tr><td>B+</td></tr>
-              <tr><td>B</td></tr>
-              <tr><td>B-</td></tr>
-              <tr><td>C+</td></tr>
-              <tr><td>C</td></tr>
-              <tr><td>C-</td></tr>
-              <tr><td>D</td></tr>
-              <tr><td>F</td></tr>
+            <table id="table2">
+              <tr><td>A+</td><td><input type="text" name="grade1" readonly="readonly"></td></tr>
+              <tr><td>A</td><td><input type="text" name="grade2" readonly="readonly"></td></tr>
+              <tr><td>A-</td><td><input type="text" name="grade3" readonly="readonly"></td></tr>
+              <tr><td>B+</td><td><input type="text" name="grade4" readonly="readonly"></td></tr>
+              <tr><td>B</td><td><input type="text" name="grade5" readonly="readonly"></td></tr>
+              <tr><td>B-</td><td><input type="text" name="grade6" readonly="readonly"></td></tr>
+              <tr><td>C+</td><td><input type="text" name="grade7" readonly="readonly"></td></tr>
+              <tr><td>C</td><td><input type="text" name="grade8" readonly="readonly"></td></tr>
+              <tr><td>C-</td><td><input type="text" name="grade9" readonly="readonly"></td></tr>
+              <tr><td>D</td><td><input type="text" name="grade10" readonly="readonly"></td></tr>
+              <tr><td>F</td><td><input type="text" name="grade11" readonly="readonly"></td></tr>
             </table>
           </div>
         </section>
       </td>
     </tr></table>
     </main>
-
-    <!-- <footer id="demo"><b>Copyright 2019</b></footer>
-    <button id="first_button">BUTTON1 </button>
-    <button id="second_button">BUTTON2</button> -->
 </html>
