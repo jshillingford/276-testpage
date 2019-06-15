@@ -19,18 +19,24 @@ const pool = new Pool({
 
 const app = express()
 app.use(express.static(path.join(__dirname, 'public')))
+app.post('/inputinfo', function(req, res){
+  // request body info
+  console.log(req.body);
+  // validate user
+  // respond
+})
+
 app.set('views', path.join(__dirname, 'views'))
 app.set('view engine', 'ejs')
-//do app.post to get request from my html file
 app.get('/', (req, res) => res.render('pages/index')) //get from root of app pages/index (the => represents a funciton)
 app.get('/cool', (req, res) => res.send(cool()))
 app.get('/times', (req, res) => res.send(showTimes()))
 app.get('/db', async (req, res) => {
   try {
     const client = await pool.connect()
-    const result = await client.query('SELECT * FROM test_table');
+    const result = await client.query('SELECT * FROM student');
     const results = { 'results': (result) ? result.rows : null};
-    res.render('pages/db', results );
+    res.render('pages/db', results);
     client.release();
   } catch (err) {
     console.error(err);

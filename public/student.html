@@ -1,32 +1,25 @@
 <!DOCTYPE html>
-<html>
-<head>
-</head>
-
-<body>
-
-<div class="container">
-<h2>Database Results</h2>
-
-<ul>
-    <% results.forEach(function(r) { %>
-        <li><%= r.name %>, <%= r.weight %>, <%= r.height %>, <%= r.hair_color %>, <%= r.gpa %></li>
-    <% }); %>
-</ul>
-
-</div>
-
-
-<section id="input">
-    <form class="" action="/inputinfo" method="post">
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Student Database</title>
+    <link rel="stylesheet" href="./stylesheets/student.css">
+    <script src="student.js"></script>
+  </head>
+  <body>
+    <!-- page content -->
+    <section id="students">
+      
+    </section>
+    <section id="input">
+      <form class="" action="/inputinfo" method="post">
         <input type="text" name="name" value="" placeholder="Name"><br>
         <input type="number" name="weight" value="" placeholder="Weight"><br>
         <input type="number" name="height" value="" placeholder="Height"><br>
         <input type="text" name="hair_color" value="" placeholder="Hair Color"><br>
         <input type="number" name="gpa" value="" placeholder="GPA">
         <button>ADD STUDENT</button>
-    </form>    
-</section>
-
-</body>
+      </form>    
+    </section>
+  </body>
 </html>
