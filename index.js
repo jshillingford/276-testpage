@@ -21,8 +21,8 @@ const app = express()
 app.use(express.static(path.join(__dirname, 'public')))
 app.post('/inputinfo', function(req, res){
   // request body info
-  console.log(req.body);
-  // validate user
+  console.log(req.body); //test
+  // add query here
   // respond
 })
 
